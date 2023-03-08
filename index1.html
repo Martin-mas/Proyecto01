@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   
+    <link href="style1.css" rel="stylesheet" type="text/css" >
+    <title>Proyecto cv AP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+     $(document).ready(function(){
+        $('#icon').click(function(){
+           $('ul').toggleClass('show');
+        });
+     });
+     </script>
+</head>
+<body>
+    <header >
+        <div>
+            <nav>
+                <label class="logo">Desing <SPAN>MS</SPAN></label>
+                <ul>                
+                    <li><a class="active" href="#">Inicio</a></li>
+                    <li><a href="#">Mis datos</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <label id="icon">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </nav>
+        </div>        
+    </header>
+    <section class="about">
+        <a name="datos">
+        <h2>Mis datos</h2>
+        <img src="img\foto1.jpg"></img>
+        <ul class="datos">            
+            <li><i class="fa-solid fa-user"></i> Jeremias Heller</li><br/>            
+            <li><i class="fa-solid fa-map-location-dot"></i> 2852 Walnut Hill Ln</li><br/>            
+            <li><i class="fa-solid fa-calendar-days"></i> 31 años</li><br/>            
+            <li><i class="fa-solid fa-phone"></i> (481) 263-7865</li><br/>
+        </ul>        
+        <hr>
+        <h2 class="A">Acerca de mi</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis natus repudiandae dolorum aut sunt sequi. Tenetur sint iure eaque suscipit. Vero inventore aperiam corporis aliquam. Recusandae hic odio reiciendis quam?</p>
+    </section>    
+    <section >
+        <a name="proyectos"></a>
+        <h2>Proyectos</h2>        
+        <div class="carrusel">                        
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">             
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img\01.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img\02.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img\03.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button> 
+            </div>
+        <div>                       
+    </section>
+    <section class="skills">
+        <a name="habilidades"></a>
+        <h2>Habilidades</h2>
+        <h3></h3>
+            <ul>                
+                <li><i class="fa-brands fa-html5"></i>HTML<br/><progress min="0" max="100" valu="60"></progress> </li>
+                <li><i class="fa-brands fa-css3"></i>CSS<br/><progress min="0" max="100" valu="10"></progress> </li>                
+                <li><i class="fa-brands fa-js"></i>JavaScript<br/><progress></progress> </li>                
+                <li><i class="fa-brands fa-php"></i>PHP<br/><progress></progress> </li>                
+                <li><i class="fa-brands fa-java"></i>Java<br/><progress></progress> </li>                
+                <li><i class="fa-brands fa-python"></i>Python<br/><progress></progress> </li>            
+            </ul>            
+    </section>
+    <section class="contact">
+        <a name="contacto"></a>
+        <h2>Contacto</h2>
+        <form class="form">            
+                <legend>Desing MS</legend>
+                <input type="text" name="nombre" placeholder="Nombre"/>
+                <input type="email" name="email" placeholder="E-mail"><br/>                
+                <textarea name="massege" placeholder="Mensaje"></textarea><br/>
+                <input class="submit" type="button" value="Enviar mensaje"/>                        
+        </form>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </section>
+    <footer class="copyright">
+        <p>&copy;2023 My Blog. All rights resrved</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"  ></script>   
+</body>
+</html>

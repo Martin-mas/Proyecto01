@@ -1,0 +1,252 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+body {
+    margin: 0;
+    padding: 0;    
+}
+* {
+    font-family: 'Poppins', sans-serif;
+}
+h2 {
+    padding: 20px 0 0 0;
+    margin: 80px 0 0 0;
+    color: rgb(56, 56, 58);
+    text-shadow:5px 2px 4px rgb(66, 66, 66);
+    font-size: 30px;
+} 
+.logo{
+    color: rgb(201, 201, 201);
+    font-weight: bold;
+    padding: 20px;
+    font-size: 30px;  
+}
+.logo span{
+    text-align: left;
+    color: rgb(7, 112, 211);
+}
+.datos{
+    list-style: none;    
+    font-size: 20px;
+    display: inline-block;
+}    
+.datos .fa-solid{
+    color: rgb(78, 78, 78);
+    margin:0 10px 0 0;    
+    font-size: 30px;
+    text-shadow:5px 2px 4px rgb(97, 97, 97) ;
+}
+nav{
+    height: 100px;
+    width: 100%;    
+    background-color: rgb(47, 57, 70);
+    position: fixed;    
+}
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+nav a{
+    color: rgb(201, 201, 201);
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+a.active,a:hover{
+    border: 1px solid rgb(196, 195, 195);
+    transition: .4s;
+}
+nav #icon{
+    color: rgb(158, 157, 157);
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width:1048px){
+    label.logo{
+        font-size: 32px;
+        padding-left: 60px;
+    }
+    nav ul{
+        margin-right: 20px;
+    }
+    nav a{
+        font-size: 17px;
+    }
+}
+@media (max-width:909px){
+    nav #icon{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100uv;
+        background: #2f3640;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    a.active,a:hover{
+        border: none;
+        color: #3498db;
+    }
+    nav ul.show{
+        left: 0;
+    }
+}
+.about img{    
+    padding: 30px;        
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    width: 75vw;
+    max-width: 350px;
+    min-width: 300px;
+    margin: auto;
+}
+.about p{
+    font-size: 20px;
+    padding: 5px;
+    color: rgb(104, 103, 103);
+}
+.carrusel{    
+    width:100vw;
+    max-width:700px;
+    min-width:350px;
+    margin:auto;
+    z-index: -1;
+}
+.carrusel img{        
+    width:100%;
+    height: 600px;   
+    padding: 80px;                
+}
+section {
+    padding: 0 0 20px 0;                  
+    border: 2px solid rgb(158, 151, 151);        
+    background-color: rgb(175, 174, 174) ;
+    text-align: center;    
+}
+.skills ul li {
+    text-decoration: none;
+    list-style: none;
+    margin: 10px;;
+    display:inline-block;
+    font-weight: bold;    
+    font-size: 20px;
+    padding: 10px;
+}
+.skills i{
+    font-size: 50px;
+    color: rgb(51, 51, 51);
+    margin: 30px;    
+}
+progress {
+    padding: 15px;    
+    color: black;    
+}
+.contact h2 {
+    padding: 20px;
+}
+legend{
+    padding: 20px;
+}
+input {
+    padding: 10px 90px 10px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+}
+textarea {
+    margin: 8px;
+    padding: 10px 420px 50px  10px;
+    border-radius: 5px;
+    border: none;
+}
+.submit {
+    color: rgb(7, 112, 211);
+    background-color: black;
+    border-radius: 21px;
+    padding:10px 250px ;    
+    margin-top: 2px;
+    font-family: Arial;
+    font-weight: bold;
+}
+.submit:hover {
+    color: black;
+    background-color:rgb(7, 112, 211);
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;    
+}
+@media (max-width:768px) { 
+form{
+    padding: 40px;
+    margin: 40px;
+
+}       
+input {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+}
+textarea {
+    margin: 5px;
+    padding: 10px 26px 40px  10px ;
+    border: none;
+}
+.submit {
+    color: rgb(7, 112, 211) ;
+    background-color: black;
+    border-radius: 6px;
+    padding: 10px;    
+    border: none;
+}
+.submit:hover {
+    color: black;
+    background-color: rgb(7, 112, 211) ;
+    cursor: pointer;
+}
+}
+.redes{
+    padding: 40px;
+}
+.redes a{
+    
+    font-size: 50px;
+    color: rgb(85, 85, 85);
+    margin: 30px;
+}
+.redes a:hover{
+    color:black;
+} 
+footer{    
+    padding:20px;
+    text-align:center;
+    background-color:rgb(115, 117, 119) ;
+    font-size:18px; 
+    font-family:'Poppins', sans-serif;            
+}
